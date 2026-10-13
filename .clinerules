@@ -1,0 +1,43 @@
+# Agent Rules — cursus_ai_programming
+
+## Taal & conventies
+- Gebruik Python 3.12+
+- Type hints verplicht
+- Docstrings: Google-style
+- Tests: pytest
+- use the devcobtainer or similar container to test and run code
+
+## Werkwijze
+- Lees altijd eerst de relevante spec uit `specs/` voor je implementeert
+- Lees `docs/ADR/` voor architectuur-beslissingen
+- Schrijf tests **vóór** implementatie (Spec First!)
+- Na elke wijziging: voer `harness/run_tests.sh` uit
+- Bij failing tests: los op, herhaal tot alles groen is
+- Voeg geen onnodige dependencies toe
+- Gebruik minimaal externe libraries
+- Overschrijf nooit bestaande code zonder overleg
+- schrijf in het Nederlands tenzij expliciet anders gevraagd
+- raadpleeg `/context/karpathy.md` voor implementatierichtlijnen
+
+## context
+- Lees indien nodig de contextfiles in `/context`
+
+## Constraints
+- Budgetlimiet: vraag bij twijfel
+- Max 3 retries per failing test, daarna escaleren naar developer
+- Geen wijzigingen aan `.clinerules` zonder goedkeuring
+- Alle suggesties tot verbetering bijhouden in `improvements.md`
+- Alle code moet door de harness passen (tests + lint + type check)
+
+## Niet doen
+- vermijd em-dash
+- vermijd een hoofdletter na een dubbelpunt, gebruik Nederlandstalig hoofdlettergebruik
+- vermijd lange tekst
+- nooit code runnen buiten de container
+
+## Definitie van Done
+- [ ] Alle tests in `tests/` slagen
+- [ ] `harness/run_tests.sh` geeft exit code 0
+- [ ] Type checker geeft geen fouten
+- [ ] Geen ongebruikte imports of variabelen
+- [ ] Code voldoet aan de specs in `specs/`
