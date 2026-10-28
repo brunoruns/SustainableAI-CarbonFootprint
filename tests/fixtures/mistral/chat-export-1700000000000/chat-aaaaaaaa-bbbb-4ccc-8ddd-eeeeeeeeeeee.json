@@ -1,0 +1,30 @@
+[
+  {
+    "id": "m-3",
+    "chatId": "aaaaaaaa-bbbb-4ccc-8ddd-eeeeeeeeeeee",
+    "content": "derde antwoord",
+    "role": "assistant",
+    "createdAt": "2024-06-01T10:00:03.000Z"
+  },
+  {
+    "id": "m-1",
+    "chatId": "aaaaaaaa-bbbb-4ccc-8ddd-eeeeeeeeeeee",
+    "content": "eerste vraag",
+    "role": "user",
+    "createdAt": "2024-06-01T10:00:01.000Z"
+  },
+  {
+    "id": "m-2",
+    "chatId": "aaaaaaaa-bbbb-4ccc-8ddd-eeeeeeeeeeee",
+    "content": "tweede vraag",
+    "role": "user",
+    "createdAt": "2024-06-01T10:00:02.000Z"
+  },
+  {
+    "id": "m-4",
+    "chatId": "aaaaaaaa-bbbb-4ccc-8ddd-eeeeeeeeeeee",
+    "content": null,
+    "role": "assistant",
+    "createdAt": "2024-06-01T10:00:04.000Z"
+  }
+]

@@ -1,0 +1,113 @@
+[
+  {
+    "id": "conv-openai-001",
+    "conversation_id": "conv-openai-001",
+    "title": "Voorbeeld met vertakkingen",
+    "create_time": 1733294339.556244,
+    "update_time": 1733294340.0,
+    "current_node": "node-assistent-2",
+    "mapping": {
+      "node-wortel": {
+        "id": "node-wortel",
+        "message": null,
+        "parent": null,
+        "children": ["node-systeem", "node-vertakking"]
+      },
+      "node-systeem": {
+        "id": "node-systeem",
+        "message": {
+          "id": "msg-systeem",
+          "author": {"role": "system", "name": null, "metadata": {}},
+          "create_time": 1733294330.0,
+          "content": {"content_type": "text", "parts": ["Je bent een behulpzame assistent."]},
+          "metadata": {}
+        },
+        "parent": "node-wortel",
+        "children": ["node-gebruiker"]
+      },
+      "node-gebruiker": {
+        "id": "node-gebruiker",
+        "message": {
+          "id": "msg-gebruiker",
+          "author": {"role": "user", "name": null, "metadata": {}},
+          "create_time": 1733294335.0,
+          "content": {"content_type": "text", "parts": ["Hallo, leg het kort uit."]},
+          "metadata": {}
+        },
+        "parent": "node-systeem",
+        "children": ["node-assistent"]
+      },
+      "node-assistent": {
+        "id": "node-assistent",
+        "message": {
+          "id": "msg-assistent",
+          "author": {"role": "assistant", "name": null, "metadata": {}},
+          "create_time": null,
+          "content": {
+            "content_type": "text",
+            "parts": ["Natuurlijk. ", {"content_type": "text", "text": "Hier is het antwoord."}]
+          },
+          "metadata": {"model_slug": "gpt-4o"}
+        },
+        "parent": "node-gebruiker",
+        "children": ["node-tool"]
+      },
+      "node-tool": {
+        "id": "node-tool",
+        "message": {
+          "id": "msg-tool",
+          "author": {"role": "tool", "name": "Python", "metadata": {}},
+          "create_time": null,
+          "content": {"content_type": "text", "parts": ["zoekresultaat: 42"]},
+          "metadata": {}
+        },
+        "parent": "node-assistent",
+        "children": ["node-assistent-2"]
+      },
+      "node-assistent-2": {
+        "id": "node-assistent-2",
+        "message": {
+          "id": "msg-assistent-2",
+          "author": {"role": "assistant", "name": null, "metadata": {}},
+          "create_time": 1733294339.5,
+          "content": {"content_type": "text", "parts": ["Klaar."]},
+          "metadata": {"model_slug": "gpt-4o"}
+        },
+        "parent": "node-tool",
+        "children": []
+      },
+      "node-vertakking": {
+        "id": "node-vertakking",
+        "message": {
+          "id": "msg-vertakking",
+          "author": {"role": "assistant", "name": null, "metadata": {}},
+          "create_time": 1733294338.0,
+          "content": {"content_type": "text", "parts": ["Niet gekozen tak, moet ontbreken."]},
+          "metadata": {"model_slug": "gpt-4o"}
+        },
+        "parent": "node-wortel",
+        "children": []
+      }
+    }
+  },
+  {
+    "id": "conv-openai-002",
+    "title": "Gesprek zonder actieve tak",
+    "create_time": 1733294400.0,
+    "current_node": null,
+    "mapping": {
+      "node-1": {
+        "id": "node-1",
+        "message": {
+          "id": "msg-leeg",
+          "author": {"role": "user", "name": null, "metadata": {}},
+          "create_time": 1733294400.0,
+          "content": {"content_type": "text", "parts": ["Verlaten gesprek."]},
+          "metadata": {}
+        },
+        "parent": null,
+        "children": []
+      }
+    }
+  }
+]

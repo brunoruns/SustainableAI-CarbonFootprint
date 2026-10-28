@@ -5,6 +5,7 @@
 - Type hints verplicht
 - Docstrings: Google-style
 - Tests: pytest
+- packaga manager: uv
 - use the devcobtainer or similar container to test and run code
 
 ## Werkwijze

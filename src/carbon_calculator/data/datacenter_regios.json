@@ -1,0 +1,14 @@
+{
+  "versie": 1,
+  "toelichting": "Bekende datacenterregio per aanbieder, opgebouwd uit disclosures. Dit is een schatting, geen garantie, en kan per periode veranderen (spec_carbon_calculator.md, sectie Locatie van uitvoering en energiemix, punt 2). Het rapport toont altijd de bandbreedte over meerdere zones.",
+  "regios": {
+    "openai": {
+      "zone": "USA",
+      "bron": "historisch draaide ChatGPT via Azure-datacenters in de Verenigde Staten (zie docs/ADR/carbon-calculator.md)"
+    },
+    "mistral": {
+      "zone": "EEE",
+      "bron": "Mistral draait op Europese datacenters; EEE is het Europese elektriciteitsmix-gemiddelde (zie docs/ADR/carbon-calculator.md)"
+    }
+  }
+}

@@ -1,0 +1,16 @@
+[
+  {
+    "id": "miss-1",
+    "chatId": "11111111-2222-4333-8444-555555555555",
+    "content": "Wat is de hoofdstad van België?",
+    "role": "user",
+    "createdAt": "2024-05-31T10:00:01.000Z"
+  },
+  {
+    "id": "miss-2",
+    "chatId": "11111111-2222-4333-8444-555555555555",
+    "content": "Brussel.",
+    "role": "assistant",
+    "createdAt": "2024-05-31T10:00:02.000Z"
+  }
+]
